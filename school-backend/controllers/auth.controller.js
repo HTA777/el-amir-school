@@ -37,7 +37,7 @@ exports.login = async (req, res, next) => {
       return res.status(403).json({ error: 'الحساب معطّل' });
     }
 
-    const valid = await comparePassword(password, user.password);
+    const valid = await comparePassword(password, user.password_hash);
     if (!valid) {
       return res.status(401).json({ error: 'اسم المستخدم أو كلمة المرور غير صحيحة' });
     }

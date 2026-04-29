@@ -252,7 +252,7 @@ $$ LANGUAGE plpgsql SECURITY DEFINER;
 INSERT INTO admins (username, password_hash, full_name, email, role, permissions)
 VALUES (
   'admin',
-  '$2a$12$LJ3/LPQ.v1lRyFP5fhI3nOPjVQdP5RX/9oY3L5JR6vSfBOqF0vQXq',
+  '$2a$12$BabinJXzSc500L8wmdrkvO3xfAQ4MtVd30Nvb6SvEJr5RceiASF/O',
   'المدير الرئيسي',
   'admin@school.com',
   'super_admin',
